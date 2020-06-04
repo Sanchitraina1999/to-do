@@ -4,7 +4,13 @@ import AddTodo from "./AddTodo";
 
 class App extends Component {
   state = {
-    todos: [],
+    todos: [
+      // {id: 1, content: 'First'},
+      // {id: 2, content: 'Second'},
+      // {id: 3, content: 'Third'},
+      // {id: 4, content: 'Fourth'},
+      // {id: 5, content: 'Fifth'},
+    ],
   };
   deleteTodos = (id) => {
     const todos = this.state.todos.filter((todo) => {

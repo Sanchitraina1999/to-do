@@ -11,10 +11,12 @@ class AddTodo extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addTodo(this.state);
-    this.setState({
-      content: "",
-    });
+    if (this.state.content != "") {
+      this.props.addTodo(this.state);
+      this.setState({
+        content: "",
+      });
+    }
   };
   render() {
     return (
@@ -24,6 +26,7 @@ class AddTodo extends Component {
 
           <input
             type="text"
+            STYLE="color: white"
             onChange={this.handleChange}
             value={this.state.content}
           ></input>
