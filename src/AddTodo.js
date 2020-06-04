@@ -11,7 +11,7 @@ class AddTodo extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.content != "") {
+    if (this.state.content !== "") {
       this.props.addTodo(this.state);
       this.setState({
         content: "",
