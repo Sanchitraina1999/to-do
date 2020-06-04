@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <h1 className="center pink-text">Todo's</h1>
+        <h1 className="center pink-text mt-10">Todo's</h1>
         <AddTodo addTodo={this.addTodo} />
         <label className="ml-2">Click on any Todo to delete</label>
         <Todos todos={this.state.todos} deleteTodos={this.deleteTodos} />
